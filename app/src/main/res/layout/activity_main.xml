@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/logo"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:src="@mipmap/healthad">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/textLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:text="Log in"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogIn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="45dp"
+        android:background="#99141414"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="15dp"
+        android:hint="Username"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="45dp"
+        android:background="#99141414"
+        android:drawableLeft="@drawable/ic_baseline_fingerprint_24"
+        android:drawablePadding="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logInBtn"
+        android:text="Log in"
+        android:backgroundTint="@color/green"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPass"
+        android:text="Forgot Password?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logInBtn"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp"
+        android:text="Create Account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forgotPass"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp">
+
+    </TextView>
+
+
+
+</RelativeLayout>
