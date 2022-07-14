@@ -6,7 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
+
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
     public void openRegtype(View view) {
         startActivity(new Intent(this, RegTypeActivity.class));
     }
+
 
 }

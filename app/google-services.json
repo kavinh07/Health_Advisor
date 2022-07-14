@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633237536183",
+    "firebase_url": "https://health-advisor-a19a3-default-rtdb.firebaseio.com",
+    "project_id": "health-advisor-a19a3",
+    "storage_bucket": "health-advisor-a19a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633237536183:android:d8d9b04344745c8fab7c32",
+        "android_client_info": {
+          "package_name": "com.example.healthadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633237536183-139s3j3q7kik1893ug69svv2jap1gdgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-lU2Z5gn7isg9tCL-y3W2_mhJoZbLH18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633237536183-139s3j3q7kik1893ug69svv2jap1gdgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

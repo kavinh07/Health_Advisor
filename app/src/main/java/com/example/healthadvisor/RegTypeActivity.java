@@ -8,13 +8,22 @@ import android.view.View;
 
 public class RegTypeActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg_type);
     }
 
-    public void openReg(View view) {
-        startActivity(new Intent(this, RegistrationActivity.class));
+    public void openRegDoc(View view) {
+
+        startActivity(new Intent(this, DocRegistrationActivity.class));
+
     }
+    public void openRegPat(View view) {
+
+        startActivity(new Intent(this, RegistrationActivity.class));
+
+    }
+
 }
