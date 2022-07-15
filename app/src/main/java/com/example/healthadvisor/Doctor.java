@@ -1,7 +1,8 @@
 package com.example.healthadvisor;
 
 public class Doctor {
-    private int id;
+    private String id;
+    private String name;
     private String email;
     private String password;
     private String gender;
@@ -15,12 +16,28 @@ public class Doctor {
         this.userType = userType;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     public String getEmail() {

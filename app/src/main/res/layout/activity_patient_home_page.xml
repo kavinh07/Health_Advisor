@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1911283642"
-                android:textSize="20dp">
+                android:textSize="12dp">
 
             </TextView>
 
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="kabinhasan99@gmail.com"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
         </LinearLayout>
@@ -67,8 +67,9 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/grid"
         android:layout_below="@id/infoLayout"
-        android:layout_margin="20dp"
+        android:layout_margin="5dp"
         android:columnCount="2"
         android:rowCount="2">
 
@@ -225,6 +226,20 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:id="@+id/signOutBtn"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:layout_columnSpan="2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/grid">
+
+        </Button>
+
 
 
 

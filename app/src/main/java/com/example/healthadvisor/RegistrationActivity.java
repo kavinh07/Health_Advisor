@@ -94,7 +94,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         saveData();
                         startActivity(new Intent(RegistrationActivity.this, PatientHomePage.class));
-                        Toast.makeText(RegistrationActivity.this, "Registration succesful.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegistrationActivity.this, "Registration successful.", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(RegistrationActivity.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
