@@ -3,7 +3,9 @@ package com.example.healthadvisor;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class DoctorHomePage extends AppCompatActivity {
     FirebaseUser person;
     DatabaseReference dR;
-    TextView tvDocId;
     TextView tvDocName;
     TextView tvDocEmail;
     private String UID;
@@ -29,7 +30,6 @@ public class DoctorHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_home_page);
 
-        tvDocId = findViewById(R.id.docId);
         tvDocName = findViewById(R.id.docName);
         tvDocEmail = findViewById(R.id.docEmail);
 
@@ -57,15 +57,19 @@ public class DoctorHomePage extends AppCompatActivity {
                         user.setEmail(email);
 
                         tvDocEmail.setText(user.getEmail());
-                        tvDocId.setText(user.getId());
                         tvDocName.setText(user.getName());
-                    } else {
-                        Toast.makeText(DoctorHomePage.this, "Doesn't exist", Toast.LENGTH_SHORT).show();
                     }
-                } else {
-                    Toast.makeText(DoctorHomePage.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    public void openEditProfileDoc(View view) {
+        startActivity(new Intent(DoctorHomePage.this, DoctorEditProfileActivity.class));
+    }
+
+    public void openDocSignOut(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(DoctorHomePage.this, MainActivity.class));
     }
 }

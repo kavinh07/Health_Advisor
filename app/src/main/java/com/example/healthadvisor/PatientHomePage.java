@@ -3,7 +3,9 @@ package com.example.healthadvisor;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,10 +24,11 @@ public class PatientHomePage extends AppCompatActivity {
 
     FirebaseUser person;
     DatabaseReference dR;
-    TextView tvPatientId;
     TextView tvPatientName;
     TextView tvPatientEmail;
     private String UID;
+
+
 
 
 
@@ -34,7 +37,7 @@ public class PatientHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_home_page);
 
-        tvPatientId=findViewById(R.id.patientId);
+
         tvPatientName=findViewById(R.id.patientName);
         tvPatientEmail=findViewById(R.id.patientEmail);
 
@@ -63,7 +66,6 @@ public class PatientHomePage extends AppCompatActivity {
                         user.setEmail(email);
 
                         tvPatientEmail.setText(user.getEmail());
-                        tvPatientId.setText(user.getId());
                         tvPatientName.setText(user.getName());
                     }else{
                         Toast.makeText(PatientHomePage.this, "Doesn't exist", Toast.LENGTH_SHORT).show();
@@ -76,4 +78,12 @@ public class PatientHomePage extends AppCompatActivity {
     }
 
 
+    public void openEditProfile(View view) {
+        startActivity(new Intent(PatientHomePage.this, PersonEditProfileActivity.class));
+    }
+
+    public void openPatSignOut(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(PatientHomePage.this, MainActivity.class));
+    }
 }
