@@ -86,4 +86,9 @@ public class PatientHomePage extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(PatientHomePage.this, MainActivity.class));
     }
+
+    public void openPatientForm(View view) {
+        startActivity(new Intent(PatientHomePage.this, PatientFormActivity.class));
+
+    }
 }

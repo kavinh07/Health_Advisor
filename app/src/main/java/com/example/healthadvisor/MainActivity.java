@@ -6,10 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.util.Patterns;
 import android.widget.Toast;
@@ -36,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     FirebaseUser person;
     int userType;
 
+    ProgressBar proBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         logInBtn = findViewById(R.id.logInBtn);
         forgetPass = findViewById(R.id.forgotPass);
         createAccount = findViewById(R.id.signUp);
+        proBar = findViewById(R.id.proBar);
         mAuth = FirebaseAuth.getInstance();
 
         forgetPass.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 LogInUser();
+                proBar.setVisibility(View.VISIBLE);
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        proBar.setVisibility(View.INVISIBLE);
+                    }
+                },4000);
             }
         });
     }
@@ -78,9 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-
                                 checkUserType();
-
                                 Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                                 finish();
                             }
@@ -115,11 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     if(task.getResult().exists()){
                         startActivity(new Intent(MainActivity.this, PatientHomePage.class));
-                    }else{
-                        Toast.makeText(MainActivity.this, "Doesn't exist", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -130,11 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     if(task.getResult().exists()){
                         startActivity(new Intent(MainActivity.this, DoctorHomePage.class));
-                    }else{
-                        Toast.makeText(MainActivity.this, "Doesn't exist", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             }
         });
