@@ -1,12 +1,42 @@
 package com.example.healthadvisor;
 
 public class Patient extends Person {
+    private String userId;
     private String patient_id;
     private String person_id;
     private String patient_name;
-    private int patient_age;
+    private String patient_age;
     private String patient_gender;
     private String patient_blood_group;
+    private String disease;
+
+    public String getDisease() {
+        return disease;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPatient_phone_no() {
+        return patient_phone_no;
+    }
+
+    public void setPatient_phone_no(String patient_phone_no) {
+        this.patient_phone_no = patient_phone_no;
+    }
+
+    private String patient_phone_no;
+
+
 
     public Patient(int userType) {
         super(userType);
@@ -36,11 +66,11 @@ public class Patient extends Person {
         this.patient_name = patient_name;
     }
 
-    public int getPatient_age() {
+    public String getPatient_age() {
         return patient_age;
     }
 
-    public void setPatient_age(int patient_age) {
+    public void setPatient_age(String patient_age) {
         this.patient_age = patient_age;
     }
 

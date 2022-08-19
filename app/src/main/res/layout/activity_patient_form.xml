@@ -178,13 +178,14 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_margin="5dp">
+
             <Button
-                android:id="@+id/signUpBtn"
+                android:id="@+id/nextBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/green"
                 android:layout_marginHorizontal="10dp"
-                android:text="Sign up">
+                android:backgroundTint="@color/green"
+                android:text="Next">
 
             </Button>
 
@@ -193,7 +194,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:layout_toRightOf="@id/signUpBtn"
+                android:layout_toRightOf="@id/nextBtn"
                 android:backgroundTint="@color/red"
                 android:text="Discard"
                 android:onClick="openPatientHome">

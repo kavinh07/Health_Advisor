@@ -34,11 +34,12 @@ public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registration);
 
         mAuth = FirebaseAuth.getInstance();
         dR = FirebaseDatabase.getInstance().getReference("Person");
 
-        setContentView(R.layout.activity_registration);
+
         nameEditTxt = findViewById(R.id.nametxt);
         emailEditTxt = findViewById(R.id.emailTxt);
         passEditTxt = findViewById(R.id.passTxt);

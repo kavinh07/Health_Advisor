@@ -26,10 +26,12 @@ import java.util.Map;
 public class SymptomAnalyzerActivity extends AppCompatActivity {
     String url= "https://symptom-analyzer.herokuapp.com/predict";
 //    String url = "http://127.0.0.1:5000/test2";
-    Button checkSymptomBtn, exitBtn;
+    Button checkSymptomBtn, exitBtn, nextBtn;
     public CheckBox itching, skin_rash, nodal_skin_eruptions, continuous_sneezing, shivering, chills, joint_pain, stomach_pain, acidity, ulcers_on_tongue, muscle_wasting, vomiting, burning_micturition, spotting_urination, fatigue, weight_gain, anxiety, cold_hands_and_feets, mood_swings, weight_loss, restlessness, lethargy, patches_in_throat, irregular_sugar_level, cough, high_fever, sunken_eyes, breathlessness, sweating, dehydration, indigestion, headache, yellowish_skin, dark_urine, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, constipation, abdominal_pain, diarrhoea, mild_fever, yellow_urine, yellowing_of_eyes, acute_liver_failure, fluid_overload, swelling_of_stomach, swelled_lymph_nodes, malaise, blurred_and_distorted_vision, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, weakness_in_limbs, fast_heart_rate, pain_during_bowel_movements, pain_in_anal_region, bloody_stool, irritation_in_anus, neck_pain, dizziness, cramps, bruising, obesity, swollen_legs, swollen_blood_vessels, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremeties, excessive_hunger, extra_marital_contacts, drying_and_tingling_lips, slurred_speech, knee_pain, hip_joint_pain, muscle_weakness, stiff_neck, swelling_joints, movement_stiffness, spinning_movements, loss_of_balance, unsteadiness, weakness_of_one_body_side, loss_of_smell, bladder_discomfort, foul_smell_of_urine, continuous_feel_of_urine, passage_of_gases, internal_itching, toxic_look, depression, irritability, muscle_pain, altered_sensorium, red_spots_over_body, belly_pain, abnormal_menstruation, dischromic_patches, watering_from_eyes, increased_appetite, polyuria, family_history, mucoid_sputum, rusty_sputum, lack_of_concentration, visual_disturbances, receiving_blood_transfusion, receiving_unsterile_injections, coma, stomach_bleeding, distention_of_abdomen, history_of_alcohol_consumption, blood_in_sputum, prominent_veins_on_calf, palpitations, painful_walking, pus_filled_pimples, blackheads, scurring, skin_peeling, silver_like_dusting, small_dents_in_nails, inflammatory_nails, blister, red_sore_around_nose, yellow_crust_ooze;
     public String itchingV, skin_rashV, nodal_skin_eruptionsV, continuous_sneezingV, shiveringV, chillsV, joint_painV, stomach_painV, acidityV, ulcers_on_tongueV, muscle_wastingV, vomitingV, burning_micturitionV, spotting_urinationV, fatigueV, weight_gainV, anxietyV, cold_hands_and_feetsV, mood_swingsV, weight_lossV, restlessnessV, lethargyV, patches_in_throatV, irregular_sugar_levelV, coughV, high_feverV, sunken_eyesV, breathlessnessV, sweatingV, dehydrationV, indigestionV, headacheV, yellowish_skinV, dark_urineV, nauseaV, loss_of_appetiteV, pain_behind_the_eyesV, back_painV, constipationV, abdominal_painV, diarrhoeaV, mild_feverV, yellow_urineV, yellowing_of_eyesV, acute_liver_failureV, fluid_overloadV, swelling_of_stomachV, swelled_lymph_nodesV, malaiseV, blurred_and_distorted_visionV, phlegmV, throat_irritationV, redness_of_eyesV, sinus_pressureV, runny_noseV, congestionV, chest_painV, weakness_in_limbsV, fast_heart_rateV, pain_during_bowel_movementsV, pain_in_anal_regionV, bloody_stoolV, irritation_in_anusV, neck_painV, dizzinessV, crampsV, bruisingV, obesityV, swollen_legsV, swollen_blood_vesselsV, puffy_face_and_eyesV, enlarged_thyroidV, brittle_nailsV, swollen_extremetiesV, excessive_hungerV, extra_marital_contactsV, drying_and_tingling_lipsV, slurred_speechV, knee_painV, hip_joint_painV, muscle_weaknessV, stiff_neckV, swelling_jointsV, movement_stiffnessV, spinning_movementsV, loss_of_balanceV, unsteadinessV, weakness_of_one_body_sideV, loss_of_smellV, bladder_discomfortV, foul_smell_of_urineV, continuous_feel_of_urineV, passage_of_gasesV, internal_itchingV, toxic_lookV, depressionV, irritabilityV, muscle_painV, altered_sensoriumV, red_spots_over_bodyV, belly_painV, abnormal_menstruationV, dischromic_patchesV, watering_from_eyesV, increased_appetiteV, polyuriaV, family_historyV, mucoid_sputumV, rusty_sputumV, lack_of_concentrationV, visual_disturbancesV, receiving_blood_transfusionV, receiving_unsterile_injectionsV, comaV, stomach_bleedingV, distention_of_abdomenV, history_of_alcohol_consumptionV, fluid_overloadsV, blood_in_sputumV, prominent_veins_on_calfV, palpitationsV, painful_walkingV, pus_filled_pimplesV, blackheadsV, scurringV, skin_peelingV, silver_like_dustingV, small_dents_in_nailsV, inflammatory_nailsV, blisterV, red_sore_around_noseV, yellow_crust_oozeV;
     EditText diseasetx;
+
+    String pId, disease;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -165,6 +167,10 @@ public class SymptomAnalyzerActivity extends AppCompatActivity {
         blister = findViewById(R.id.blister);
         red_sore_around_nose = findViewById(R.id.redSoreAroundNose);
         yellow_crust_ooze = findViewById(R.id.yellowCrustOoze);
+
+        pId= getIntent().getStringExtra("patientId");
+
+        nextBtn= findViewById(R.id.nextBtn);
 
 
         exitBtn= findViewById(R.id.exitbtn);
@@ -971,10 +977,13 @@ public class SymptomAnalyzerActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     String result = jsonObject.getString("disease");
-
-
+                    disease= result;
                     diseasetx = findViewById(R.id.diseasetxt);
-                    diseasetx.setText(result);
+                    diseasetx.setText("Check up done");
+                    nextBtn.setVisibility(View.VISIBLE);
+
+
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -1124,6 +1133,18 @@ public class SymptomAnalyzerActivity extends AppCompatActivity {
             queue.add(stringRequest);
         });
 
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(SymptomAnalyzerActivity.this, DiseaseShowActivity.class);
+                i.putExtra("patientId", pId);
+                i.putExtra("patientDisease", disease);
+                startActivity(i);
+
+            }
+        });
+
 
     }
+
 }

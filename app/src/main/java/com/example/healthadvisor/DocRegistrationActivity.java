@@ -26,6 +26,7 @@ public class DocRegistrationActivity extends AppCompatActivity {
     private EditText emailEditTxt;
     private EditText passEditTxt;
     private EditText conPassEditTxt;
+    private EditText disease;
     private RadioGroup genderRadio;
     private Button signUpBtn;
     private String gender;
@@ -35,17 +36,19 @@ public class DocRegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_doc_registration);
 
         mAuth = FirebaseAuth.getInstance();
         dR = FirebaseDatabase.getInstance().getReference("Doctor");
 
-        setContentView(R.layout.activity_doc_registration);
+
         nameEditTxt = findViewById(R.id.nametxt);
         emailEditTxt = findViewById(R.id.emailTxt);
         passEditTxt = findViewById(R.id.passTxt);
         conPassEditTxt = findViewById(R.id.conPassTxt);
         genderRadio = findViewById(R.id.genderRadioGroup);
         signUpBtn = findViewById(R.id.signUpBtn);
+        disease = findViewById(R.id.diseasetxt);
         genderRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -95,9 +98,9 @@ public class DocRegistrationActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         saveData();
                         startActivity(new Intent(DocRegistrationActivity.this, DoctorHomePage.class));
-                        Toast.makeText(DocRegistrationActivity.this, "Registration succesful.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DocRegistrationActivity.this, "Registration successful.", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(DocRegistrationActivity.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DocRegistrationActivity.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -124,4 +127,6 @@ public class DocRegistrationActivity extends AppCompatActivity {
         Toast.makeText(this, user.getId(), Toast.LENGTH_SHORT).show();
 
     }
+
+
 }

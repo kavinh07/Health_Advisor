@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".DoctorScheduleActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/schedulBox">
+
+        <TextView
+            android:id="@+id/scheduletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Doctor Schedule"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scheduletxt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/firstSchedule">
+
+            <TextView
+                android:id="@+id/firstScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="1st Schedule"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/firstStartTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/firstScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="Start time"
+                android:textAlignment="center">
+
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/firstStartTimeRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstStartTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firstStartAmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="AM">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/firstStartPmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/firstStartAmRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="PM">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/firstEndTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/firstStartTimeRadioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="End time"
+                android:textAlignment="center">
+
+            </EditText>
+            <RadioGroup
+                android:id="@+id/firstEndTimeRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstEndTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firstEndAmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="AM">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/firstEndPmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/firstEndAmRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="PM">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstSchedule"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/secondSchedule">
+
+            <TextView
+                android:id="@+id/secondScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="2nd Schedule"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/secondStartTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/secondScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="Start time"
+                android:textAlignment="center">
+
+            </EditText>
+            <RadioGroup
+                android:id="@+id/secondStartTimeRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondStartTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/secondStartAmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="AM">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/secondStartPmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/secondStartAmRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="PM">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/secondEndTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/secondStartTimeRadioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="End time"
+                android:textAlignment="center">
+
+            </EditText>
+            <RadioGroup
+                android:id="@+id/secondEndTimeRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondEndTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/secondEndAmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="AM">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/secondEndPmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/secondEndAmRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="PM">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedulBox"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttons">
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/green"
+            android:text="Update">
+
+        </Button>
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/red"
+            android:text="Exit">
+
+        </Button>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

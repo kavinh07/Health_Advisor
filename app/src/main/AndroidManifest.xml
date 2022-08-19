@@ -16,6 +16,21 @@
         android:theme="@style/Theme.HealthAdvisor"
         tools:targetApi="31">
         <activity
+            android:name=".ShowDoctorListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleAvailabiltyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleAction"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiseaseShowActivity"
+            android:exported="false" />
+        <activity
             android:name=".AppointmentActivity"
             android:exported="false" />
         <activity

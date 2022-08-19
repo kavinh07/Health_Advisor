@@ -72,4 +72,8 @@ public class DoctorHomePage extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(DoctorHomePage.this, MainActivity.class));
     }
+
+    public void openSchedule(View view) {
+        startActivity(new Intent(DoctorHomePage.this, ScheduleAction.class));
+    }
 }

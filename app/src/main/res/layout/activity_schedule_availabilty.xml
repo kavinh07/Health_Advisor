@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".ScheduleAvailabiltyActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/scheduletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Schedule Availability"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scheduletxt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/firstSchedule">
+
+            <TextView
+                android:id="@+id/firstScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="1st Schedule"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/firstTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/firstScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="Time"
+                android:textAlignment="center">
+
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/firstRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firstAvailableRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="Available">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/firstUnavailableRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/firstAvailableRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="Unavailable">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstSchedule"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/secondSchedule">
+
+            <TextView
+                android:id="@+id/secondScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="2nd Schedule"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/secondTimeetx"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/secondScheduleTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:hint="Time"
+                android:textAlignment="center">
+
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/secondRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondTimeetx"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/secondAvailableRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="Available">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/secondUnavailableRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/secondAvailableRadioBtn"
+                    android:paddingHorizontal="5dp"
+                    android:text="Unavailable">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondSchedule"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttons">
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="@color/green"
+                android:text="Update">
+
+            </Button>
+
+            <Button
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="@color/red"
+                android:text="Exit">
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

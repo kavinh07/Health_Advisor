@@ -7,10 +7,22 @@ public class Doctor {
     private String password;
     private String gender;
     private String type;
+    private String disease;
     private String specialized;
     private String Address;
     private String schedule;
     private int userType;
+
+    public Doctor() {
+    }
+
+    public String getDisease() {
+        return disease;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
 
     public Doctor(int userType) {
         this.userType = userType;
