@@ -2,6 +2,7 @@ package com.example.healthadvisor;
 
 public class Patient extends Person {
     private String patient_id;
+    private String person_id;
     private String patient_name;
     private int patient_age;
     private String patient_gender;
@@ -9,6 +10,14 @@ public class Patient extends Person {
 
     public Patient(int userType) {
         super(userType);
+    }
+
+    public String getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(String person_id) {
+        this.person_id = person_id;
     }
 
     public String getPatient_id() {

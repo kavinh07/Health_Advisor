@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Set New Password", Toast.LENGTH_SHORT).show();
+
             }
         });
         createAccount.setOnClickListener(new View.OnClickListener() {
@@ -142,4 +143,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

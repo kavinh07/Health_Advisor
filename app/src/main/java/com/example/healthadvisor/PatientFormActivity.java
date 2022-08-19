@@ -17,4 +17,5 @@ public class PatientFormActivity extends AppCompatActivity {
     public void openPatientHome(View view) {
         startActivity(new Intent(PatientFormActivity.this, PatientHomePage.class));
     }
+
 }
