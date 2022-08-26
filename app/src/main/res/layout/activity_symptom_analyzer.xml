@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="10dp">
         <TextView
@@ -25,1269 +25,1374 @@
             android:textStyle="bold">
 
         </TextView>
-        <TextView
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having any pain?"
-            android:textSize="25dp"
-            android:textAlignment="center">
+            android:layout_height="430dp">
 
-        </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having any pain?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/musclePain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Muscle Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/neckPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Neck Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/stomachPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/jointPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Joint Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/chestPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chest Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/bellyPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Belly Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/backPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Back Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/hipJointPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hip-Joint Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/kneePain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Knee Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/abdominalPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abdominal Pain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/analRegionPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pain in anal-region">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/behindEyesPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pain behind the eyes">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/painfulWalking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Painful walking">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/bowelPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pain during bowel movement">
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having skin problems?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/itching"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Itching">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/internalItching"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Internal Itching">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/skinRash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skin Rash">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/skinPeeling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skin Peeling">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/nodalSkin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nodal Skin eruption">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/yellowishSkin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yellowish Skin">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/pimple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pus-filled pimple">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/blackheads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blackheads">
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having urine or stool problems?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/darkUrine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dark Urine">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/yellowUrine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yellow Urine">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/foulUrine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Foul smell of urine">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/micturition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Burning Micturition">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/spotUrine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spotting Urination">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/conUrine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Continuous feel of urine">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/Constipation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Constipation">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/bladderDiscom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bladder Discomfort">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/bloodyFool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bloody Stool">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having Mental issues?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/lackOfConcentration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lack of concentration">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/depression"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Depression">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/moodSwing"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Mood Swing">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/anxiety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anxiety">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/restlessness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Restlessness">
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#30000000"
+                        android:text="Are you having weight problems?"
+                        android:textAlignment="center"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/gainWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weight Gain">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/weightLoss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weight Loss">
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having eye related problems?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/sunkenEyed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sunken Eyes">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/wareting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Watering from eyes">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/yellowness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yellowness of eyes">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/redness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Redness of eyes">
+
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having sputum problems?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/mucoidSputum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mucoid Sputum">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/rustySputum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rusty Sputum">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/bloodInSputum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blood in Sputum">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having swelling?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/swelledLymphNodes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swelled lymph nodes">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/swollenEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swollen extremities">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/swollenBloodVes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swollen Blood Vessels">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/SwollenLegs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swollen Legs">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/swollenJoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swollen Joints">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having ?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/nausea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nausea">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/headache"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Headache">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/acidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acidity">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/irregularSugarLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Irregular Sugar Level">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/dizziness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dizziness">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/sweating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sweating">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/vomitting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vomiting">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/breathlessness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Breathlessness">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/dehydration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dehydration">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/indigesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Indigesion">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/diarrhoea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Diarrhoea">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having muscle related problems?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/muscleWeakness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Muscle Weakness">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/muscleWasting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Muscle Wasting">
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having cold or fever?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chills">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/runnyNose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Runny nose">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/lossSmell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loss of Smell">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/shivering"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shivering">
+
+                    </CheckBox>
+
+
+                    <CheckBox
+                        android:id="@+id/highFever"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="High Fever">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/mildFever"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mild Fever">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/cough"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cough">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/conSneezing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Continuous Sneezing">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having stomach related issues?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/stomachBleeding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach Bleeding">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/swellingOfStomach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Swelling of stomach">
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Are you having any appetite issue?"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/lossAppetite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loss of Appetite">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/increasedAppetite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Increased Appetite">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/excessiveHunger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Excessive Hunger">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#30000000"
+                    android:text="Others"
+                    android:textAlignment="center"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/fatigue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fatigue">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/coldHF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cold Hands and Feet">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/lethargy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lethargy">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/patchesThroat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patches in throat">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/acuteLiverFailure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acute Liver Failure">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/malaise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Malaise">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/blurredVision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blurred and Distorted Vision">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/fastHeartRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fast Heart Rate">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/throatIrritation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Throat Irritation">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/sinusPressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sinus Pressure">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/phlegm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phlegm">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/congestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Congestion">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/weaknessLimbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weakness in limbs">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/irritationAnus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Irritation in Anus">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/cramps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cramps">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/bruising"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bruising">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/obesity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Obesity">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/puffyEF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puffy eyes and face">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/enlargedThyroid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enlarged Thyroid">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/brittleNails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brittle Nails">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/extraMaritalContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Extra Marital Contact">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/dryingLips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drying and Tingling lips">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/slurredSpeech"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Slurred Speech">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/stiffNeck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stiff Neck">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/movementStiffness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Movement Stiffness">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/spinningMovements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spinning Movements">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/lossBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loss of Balance">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/unsteadiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unsteadiness">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/weaknessBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weakness of one side body">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/passageGas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Passage of Gas">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/toxicLook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Toxic Look">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/irritability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Irritability">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/alteredSensorium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Altered Sensorium">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/redSpot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red Spots over body">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/abnormalMenstruation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abnormal Menstruation">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/discromicPatches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dischromic Patches">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/poly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Polyuria">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/familyHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Family History">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/visualDisturbance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visual Disturbances">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/receivingBlood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receiving blood transfusion">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/receivingUnsterile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receiving unsterile injections">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/coma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Coma">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/distentionAbdomen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Distention of Abdomen">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/historyAlchohol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="History of Alchohol Consumption">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/fluidOverload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fluid Overload">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/prominentVeins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prominent Veins on Calf">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/palpitations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Palpitations">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/scurring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scurring">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/ulcerTougue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ulcers_on_tongue">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/silver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Silver like dusting">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/smallDents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Small dents in nails">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/blister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blister">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/inflammatory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Inflammatory nails">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/redSoreAroundNose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red sore around nose">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/yellowCrustOoze"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yellow crust ooze">
+
+                    </CheckBox>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/musclePain"
-                android:text="Muscle Pain">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/neckPain"
-                android:text="Neck Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/stomachPain"
-                android:text="Stomach Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/jointPain"
-                android:text="Joint Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/chestPain"
-                android:text="Chest Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bellyPain"
-                android:text="Belly Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/backPain"
-                android:text="Back Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/hipJointPain"
-                android:text="Hip-Joint Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/kneePain"
-                android:text="Knee Pain">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/abdominalPain"
-                android:text="Abdominal Pain">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/analRegionPain"
-                android:text="Pain in anal-region">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/behindEyesPain"
-                android:text="Pain behind the eyes">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/painfulWalking"
-                android:text="Painful walking">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bowelPain"
-                android:text="Pain during bowel movement">
-
-            </CheckBox>
-        </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#30000000"
-                android:text="Are you having skin problems?"
-                android:textSize="25dp"
-                android:textAlignment="center">
-
-            </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/itching"
-                android:text="Itching">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/internalItching"
-                android:text="Internal Itching">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/skinRash"
-                android:text="Skin Rash">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/skinPeeling"
-                android:text="Skin Peeling">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/nodalSkin"
-                android:text="Nodal Skin eruption">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/yellowishSkin"
-                android:text="Yellowish Skin">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/pimple"
-                android:text="Pus-filled pimple">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/blackheads"
-                android:text="Blackheads">
-
-            </CheckBox>
-        </LinearLayout>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having urine or stool problems?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/darkUrine"
-                android:text="Dark Urine">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/yellowUrine"
-                android:text="Yellow Urine">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/foulUrine"
-                android:text="Foul smell of urine">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/micturition"
-                android:text="Burning Micturition">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spotUrine"
-                android:text="Spotting Urination">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/conUrine"
-                android:text="Continuous feel of urine">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Constipation"
-                android:text="Constipation">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bladderDiscom"
-                android:text="Bladder Discomfort">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bloodyFool"
-                android:text="Bloody Stool">
-
-            </CheckBox>
-
-        </LinearLayout>
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having Mental issues?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lackOfConcentration"
-                android:text="Lack of concentration">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/depression"
-                android:text="Depression">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:id="@+id/moodSwing"
-                android:text="Mood Swing">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/anxiety"
-                android:text="Anxiety">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/restlessness"
-                android:text="Restlessness">
-
-            </CheckBox>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#30000000"
-                android:text="Are you having weight problems?"
-                android:textSize="25dp"
-                android:textAlignment="center">
-
-            </TextView>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/gainWeight"
-                android:text="Weight Gain">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/weightLoss"
-                android:text="Weight Loss">
-
-            </CheckBox>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having eye related problems?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sunkenEyed"
-                android:text="Sunken Eyes">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/wareting"
-                android:text="Watering from eyes">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/yellowness"
-                android:text="Yellowness of eyes">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/redness"
-                android:text="Redness of eyes">
-
-
-            </CheckBox>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having sputum problems?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/mucoidSputum"
-                android:text="Mucoid Sputum">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/rustySputum"
-                android:text="Rusty Sputum">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bloodInSputum"
-                android:text="Blood in Sputum">
-
-            </CheckBox>
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having swelling?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/swelledLymphNodes"
-                android:text="Swelled lymph nodes">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/swollenEx"
-                android:text="Swollen extremities">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/swollenBloodVes"
-                android:text="Swollen Blood Vessels">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/SwollenLegs"
-                android:text="Swollen Legs">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/swollenJoints"
-                android:text="Swollen Joints">
-
-            </CheckBox>
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having ?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/nausea"
-                android:text="Nausea">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/headache"
-                android:text="Headache">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/acidity"
-                android:text="Acidity">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/irregularSugarLevel"
-                android:text="Irregular Sugar Level">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/dizziness"
-                android:text="Dizziness">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sweating"
-                android:text="Sweating">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/vomitting"
-                android:text="Vomiting">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/breathlessness"
-                android:text="Breathlessness">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/dehydration"
-                android:text="Dehydration">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/indigesion"
-                android:text="Indigesion">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/diarrhoea"
-                android:text=" Diarrhoea">
-
-            </CheckBox>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having muscle related problems?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/muscleWeakness"
-                android:text="Muscle Weakness">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/muscleWasting"
-                android:text="Muscle Wasting">
-
-            </CheckBox>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having cold or fever?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/chills"
-                android:text="Chills">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/runnyNose"
-                android:text="Runny nose">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lossSmell"
-                android:text="Loss of Smell">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/shivering"
-                android:text="Shivering">
-
-            </CheckBox>
-
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/highFever"
-                android:text="High Fever">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/mildFever"
-                android:text="Mild Fever">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cough"
-                android:text="Cough">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/conSneezing"
-                android:text="Continuous Sneezing">
-
-            </CheckBox>
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having stomach related issues?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/stomachBleeding"
-                android:text="Stomach Bleeding">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/swellingOfStomach"
-                android:text="Swelling of stomach">
-
-            </CheckBox>
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Are you having any appetite issue?"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lossAppetite"
-                android:text="Loss of Appetite">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/increasedAppetite"
-                android:text="Increased Appetite">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/excessiveHunger"
-                android:text="Excessive Hunger">
-
-            </CheckBox>
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#30000000"
-            android:text="Others"
-            android:textSize="25dp"
-            android:textAlignment="center">
-
-        </TextView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fatigue"
-                android:text="Fatigue">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/coldHF"
-                android:text="Cold Hands and Feet">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lethargy"
-                android:text="Lethargy">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/patchesThroat"
-                android:text="Patches in throat">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/acuteLiverFailure"
-                android:text="Acute Liver Failure">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/malaise"
-                android:text="Malaise">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/blurredVision"
-                android:text="Blurred and Distorted Vision">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fastHeartRate"
-                android:text="Fast Heart Rate">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/throatIrritation"
-                android:text="Throat Irritation">
-
-            </CheckBox> <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sinusPressure"
-            android:text="Sinus Pressure">
-
-        </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/phlegm"
-                android:text="Phlegm">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/congestion"
-                android:text="Congestion">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/weaknessLimbs"
-                android:text="Weakness in limbs">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/irritationAnus"
-                android:text="Irritation in Anus">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cramps"
-                android:text="Cramps">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bruising"
-                android:text="Bruising">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/obesity"
-                android:text="Obesity">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/puffyEF"
-                android:text="Puffy eyes and face">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/enlargedThyroid"
-                android:text="Enlarged Thyroid">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/brittleNails"
-                android:text="Brittle Nails">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/extraMaritalContact"
-                android:text="Extra Marital Contact">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/dryingLips"
-                android:text="Drying and Tingling lips">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/slurredSpeech"
-                android:text="Slurred Speech">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/stiffNeck"
-                android:text="Stiff Neck">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/movementStiffness"
-                android:text="Movement Stiffness">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinningMovements"
-                android:text="Spinning Movements">
-
-            </CheckBox> <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lossBalance"
-            android:text="Loss of Balance">
-
-        </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/unsteadiness"
-                android:text="Unsteadiness">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/weaknessBody"
-                android:text="Weakness of one side body">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/passageGas"
-                android:text="Passage of Gas">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/toxicLook"
-                android:text="Toxic Look">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/irritability"
-                android:text="Irritability">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/alteredSensorium"
-                android:text="Altered Sensorium">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/redSpot"
-                android:text="Red Spots over body">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/abnormalMenstruation"
-                android:text="Abnormal Menstruation">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/discromicPatches"
-                android:text="Dischromic Patches">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/poly"
-                android:text="Polyuria">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/familyHistory"
-                android:text="Family History">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/visualDisturbance"
-                android:text="Visual Disturbances">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/receivingBlood"
-                android:text="Receiving blood transfusion">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/receivingUnsterile"
-                android:text="Receiving unsterile injections">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/coma"
-                android:text="Coma">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/distentionAbdomen"
-                android:text="Distention of Abdomen">
-
-            </CheckBox> <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/historyAlchohol"
-            android:text="History of Alchohol Consumption">
-
-        </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fluidOverload"
-                android:text="Fluid Overload">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/prominentVeins"
-                android:text="Prominent Veins on Calf">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/palpitations"
-                android:text="Palpitations">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/scurring"
-                android:text="Scurring">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/ulcerTougue"
-                android:text="Ulcers_on_tongue">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/silver"
-                android:text="Silver like dusting">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/smallDents"
-                android:text="Small dents in nails">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/blister"
-                android:text="Blister">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/inflammatory"
-                android:text="Inflammatory nails">
-
-            </CheckBox>
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/redSoreAroundNose"
-                android:text="Red sore around nose">
-
-            </CheckBox>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/yellowCrustOoze"
-                android:text="Yellow crust ooze">
-
-            </CheckBox>
-
-        </LinearLayout>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:hint="Status"
-            android:id="@+id/diseasetxt"
-            android:layout_margin="5dp">
-
-        </EditText>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp">
-            <Button
+            android:orientation="vertical">
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/nextBtn"
-                android:text="Next"
-                android:backgroundTint="#0000FF"
-                android:layout_margin="10dp"
-                android:visibility="invisible">
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:hint="Status"
+                android:id="@+id/diseasetxt"
+                android:layout_margin="5dp">
 
-            </Button>
-            <Button
+            </EditText>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkSymptombtn"
-                android:text="Check Disease"
-                android:backgroundTint="@color/green"
-                android:layout_margin="10dp">
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextBtn"
+                    android:text="Next"
+                    android:backgroundTint="#0000FF"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible">
 
-            </Button>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/exitbtn"
-                android:text="Exit"
-                android:backgroundTint="#add8e6"
-                android:layout_margin="10dp">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkSymptombtn"
+                    android:text="Check Disease"
+                    android:backgroundTint="@color/green"
+                    android:layout_margin="10dp">
 
-            </Button>
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exitbtn"
+                    android:text="Exit"
+                    android:backgroundTint="#add8e6"
+                    android:layout_margin="10dp">
+
+                </Button>
+            </LinearLayout>
         </LinearLayout>
+
+
 
 
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

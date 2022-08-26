@@ -76,4 +76,8 @@ public class DoctorHomePage extends AppCompatActivity {
     public void openSchedule(View view) {
         startActivity(new Intent(DoctorHomePage.this, ScheduleAction.class));
     }
+
+    public void openDocAppointment(View view) {
+        startActivity(new Intent(DoctorHomePage.this, DoctorAppointmentActivity.class));
+    }
 }

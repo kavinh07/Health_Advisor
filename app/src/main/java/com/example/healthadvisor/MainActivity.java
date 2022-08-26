@@ -56,14 +56,13 @@ public class MainActivity extends AppCompatActivity {
         forgetPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Set New Password", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, TestActivity.class));
 
             }
         });
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Please Sign Up", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, RegTypeActivity.class));
             }
         });
@@ -93,14 +92,12 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 checkUserType();
-                                Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                                 finish();
                             }
 
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(MainActivity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
                                 passEditText.setError("Error");
                                 passEditText.requestFocus();
                             }

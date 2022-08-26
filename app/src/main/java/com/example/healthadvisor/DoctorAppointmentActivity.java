@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -20,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class AppointmentActivity extends AppCompatActivity {
+public class DoctorAppointmentActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     DatabaseReference dR;
@@ -45,7 +43,7 @@ public class AppointmentActivity extends AppCompatActivity {
         adapter2 = new ShowAppAdapter(this, list, this);
         recyclerView.setAdapter(adapter2);
 
-        Query check= dR.orderByChild("personId").equalTo(currentPId);
+        Query check= dR.orderByChild("docId").equalTo(currentPId);
 
         check.addValueEventListener(new ValueEventListener() {
             @Override
@@ -68,13 +66,12 @@ public class AppointmentActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment);
-
-
     }
 }

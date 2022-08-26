@@ -2,7 +2,19 @@ package com.example.healthadvisor;
 
 public class ShowDoc {
 
-    String DocName, slot1, slot2;
+    String DocName;
+    String slot1;
+    String slot2;
+
+    public String getDocId() {
+        return docId;
+    }
+
+    public void setDocId(String docId) {
+        this.docId = docId;
+    }
+
+    String docId;
 
     public ShowDoc() {
     }

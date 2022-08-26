@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
-    tools:context=".RegistrationActivity">
+    tools:context=".DocRegistrationActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/diseaseTxt"
+            android:id="@+id/diseaseetx"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@+id/emailTxt"
@@ -68,7 +68,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:background="#30000000"
-            android:hint="Specialized"
+            android:hint="Specialized At"
             android:padding="20dp"
             android:textColorHint="@color/white">
 
@@ -78,7 +78,7 @@
             android:id="@+id/passTxt"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/diseaseTxt"
+            android:layout_below="@+id/diseaseetx"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"

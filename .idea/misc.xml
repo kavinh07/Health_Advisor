@@ -9,6 +9,7 @@
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_appointment.xml" value="0.240625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_disease_show.xml" value="0.240625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_doc_registration.xml" value="0.18697916666666667" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_doctor_appointment.xml" value="0.18385416666666668" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_doctor_edit_profile.xml" value="0.3625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_doctor_home_page.xml" value="0.3625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_doctor_schedule.xml" value="0.25" />
@@ -23,8 +24,11 @@
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_registration.xml" value="0.3625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_schedule_action.xml" value="0.2265625" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_schedule_availabilty.xml" value="0.2265625" />
-        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_show_doctor_list.xml" value="0.2037037037037037" />
-        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_symptom_analyzer.xml" value="0.11205539817437835" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_select_slot.xml" value="0.3625" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_show_doctor_list.xml" value="0.32037037037037036" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_symptom_analyzer.xml" value="0.18385416666666668" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/activity_test.xml" value="0.3619791666666667" />
+        <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/applist.xml" value="0.33" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/layout/item.xml" value="0.33" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/mipmap-anydpi-v26/doctor.xml" value="0.1145" />
         <entry key="..\:/Books/Android studio/HealthAdvisor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />

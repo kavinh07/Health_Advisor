@@ -26,7 +26,7 @@ public class DocRegistrationActivity extends AppCompatActivity {
     private EditText emailEditTxt;
     private EditText passEditTxt;
     private EditText conPassEditTxt;
-    private EditText disease;
+    private EditText diseaseEditTxt;
     private RadioGroup genderRadio;
     private Button signUpBtn;
     private String gender;
@@ -48,7 +48,7 @@ public class DocRegistrationActivity extends AppCompatActivity {
         conPassEditTxt = findViewById(R.id.conPassTxt);
         genderRadio = findViewById(R.id.genderRadioGroup);
         signUpBtn = findViewById(R.id.signUpBtn);
-        disease = findViewById(R.id.diseasetxt);
+        diseaseEditTxt = findViewById(R.id.diseaseetx);
         genderRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -82,6 +82,7 @@ public class DocRegistrationActivity extends AppCompatActivity {
         String email = emailEditTxt.getText().toString();
         String pass = passEditTxt.getText().toString();
         String conPass = conPassEditTxt.getText().toString();
+        String dis= diseaseEditTxt.getText().toString();
         if (TextUtils.isEmpty(email)) {
             emailEditTxt.setError("Email can't be empty!");
             emailEditTxt.requestFocus();
@@ -119,7 +120,9 @@ public class DocRegistrationActivity extends AppCompatActivity {
         user.setPassword(passEditTxt.getText().toString());
         user.setName(nameEditTxt.getText().toString());
         user.setGender(gender);
+        user.setDisease(diseaseEditTxt.getText().toString());
         user.setId(person.getUid());
+
 
         String key = user.getId();
         dR.child(key).setValue(user);

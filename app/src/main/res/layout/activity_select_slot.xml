@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".SelectSlotActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/selectSlotTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Slot"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#30000000">
+
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/slot1Btn"
+            android:layout_below="@+id/selectSlotTxt"
+            android:text="Slot 1"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white">
+
+        </Button>
+
+        <Button
+            android:id="@+id/slot2Btn"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/slot1Btn"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Slot 2"
+            android:textColor="@color/black"
+            android:textSize="25dp">
+
+        </Button>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slot2Btn"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeBtn"
+                android:text="Home"
+                android:backgroundTint="@color/red"
+                android:layout_margin="10dp">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/homeBtn"
+                android:id="@+id/backBtn"
+                android:text="Back"
+                android:backgroundTint="@color/purple_700"
+                android:layout_margin="10dp">
+
+            </Button>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

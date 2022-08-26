@@ -162,10 +162,11 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_columnSpan="2"
+                android:layout_columnSpan="1"
                 android:layout_gravity="fill"
                 app:cardCornerRadius="10dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:onClick="openAppointments">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -197,46 +198,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="5dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="5dp"
-                        android:padding="10dp"
-                        android:src="@drawable/ic_baseline_list_alt_24">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="Prescriptions"
-                        android:textAlignment="center"
-                        android:textSize="25dp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"

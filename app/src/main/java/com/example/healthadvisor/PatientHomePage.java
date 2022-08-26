@@ -91,4 +91,8 @@ public class PatientHomePage extends AppCompatActivity {
         startActivity(new Intent(PatientHomePage.this, PatientFormActivity.class));
 
     }
+
+    public void openAppointments(View view) {
+        startActivity(new Intent(PatientHomePage.this, AppointmentActivity.class));
+    }
 }
