@@ -19,6 +19,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DocRegistrationActivity extends AppCompatActivity {
 
 
@@ -126,6 +129,13 @@ public class DocRegistrationActivity extends AppCompatActivity {
 
         String key = user.getId();
         dR.child(key).setValue(user);
+
+        Map<String, Object> map= new HashMap<>();
+        map.put("time", "null");
+        map.put("availability", "0");
+
+        dR.child(key).child("Schedules").child("sch1").setValue(map);
+        dR.child(key).child("Schedules").child("sch2").setValue(map);
 
         Toast.makeText(this, user.getId(), Toast.LENGTH_SHORT).show();
 

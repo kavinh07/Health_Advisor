@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -146,10 +147,13 @@ public class DoctorScheduleActivity extends AppCompatActivity {
         map1.put("availability", "0");
         dR.child(key).child("Schedules").child("sch1").setValue(map1);
 
+
         Map<String, Object> map2= new HashMap<>();
         map2.put("time", secondSchedule);
         map2.put("availability", "0");
         dR2.child(key).child("Schedules").child("sch2").setValue(map2);
+
+        Toast.makeText(this, "Slots updated", Toast.LENGTH_SHORT).show();
 
 
     }

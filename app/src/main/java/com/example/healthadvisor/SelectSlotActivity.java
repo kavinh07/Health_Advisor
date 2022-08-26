@@ -81,6 +81,7 @@ public class SelectSlotActivity extends AppCompatActivity {
                                 m.put("docId", docId);
                                 m.put("time", slot1T);
                                 m.put("docName", docName);
+                                m.put("slotName", "sch1");
 
                                 dR3.child(appId).setValue(m);
 
@@ -125,6 +126,7 @@ public class SelectSlotActivity extends AppCompatActivity {
                                 m.put("docId", docId);
                                 m.put("time", slot2T);
                                 m.put("docName", docName);
+                                m.put("slotName", "sch2");
 
                                 dR3.child(appId).setValue(m);
 
